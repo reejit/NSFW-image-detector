@@ -8,8 +8,8 @@ eg: https://hy1al8aeg7.execute-api.ap-south-1.amazonaws.com/dev/upload?text=img_
 What is it?  
 It's a Convolutional Neural Network model deployed using Flask ,tensorflow-lite ,AWS lambda + API gateway using zappa.
 
-* The inception v3 model is trained and finetuned on the dataset. https://github.com/alex000kim/nsfw_data_scraper .I used transfer learning for training the model.   
-How to run on local host:      
+The inception v3 model is trained and finetuned on the dataset. https://github.com/alex000kim/nsfw_data_scraper .I used transfer learning for training the model.   
+How to run on local host?         
 * pip install -r requirements.txt
 * install tf-lite interpretor from the official tensorflow documentation https://www.tensorflow.org/lite/guide/python.    
 * python predictions.py
