@@ -8,9 +8,14 @@ eg: https://hy1al8aeg7.execute-api.ap-south-1.amazonaws.com/dev/upload?text=img_
 What is it?  
 It's a Convolutional Neural Network model deployed using Flask ,tensorflow-lite ,AWS lambda + API gateway using zappa.
 
-* The inception v3 model is trained and finetuned on the dataset. https://github.com/alex000kim/nsfw_data_scraper .I used transfer learning for training the model.    
+* The inception v3 model is trained and finetuned on the dataset. https://github.com/alex000kim/nsfw_data_scraper .I used transfer learning for training the model.   
+How to run on local host:      
+* pip install -r requirements.txt
+* install tf-lite interpretor from the official tensorflow documentation https://www.tensorflow.org/lite/guide/python.    
+* python predictions.py
 
-* To make sure the deployment package size is within the memory limits of aws lambda,I converted my model from tensorflow to tensorflow lite. For installing just the tf-lite interpreter check the official documentation https://www.tensorflow.org/lite/guide/python  
+Deployment of tensorflow-lite on AWS lambda.
+* To make sure the deployment package size is within the memory limits of aws lambda, I converted my model from tensorflow to tensorflow lite. For installing just the tf-lite interpreter check the official tensorflow documentation https://www.tensorflow.org/lite/guide/python  
 * For installing tf-lite dependencies on lambda, you need to make sure that zappa detects tf-lite. Just copy tf-lite folder from virtualenv/lib/python/site-packages to the top-level folder in lambda : https://www.reddit.com/r/aws/comments/93jhgi/how_can_i_add_third_party_python_dependencies_to/
 The model is present in an s3 bucket and gets downloaded in the predictions.py script using Boto3 to the lambda s3 bucket.
 I built a flask api for serving my model's predictions. Refer to the official flask documentation. 
