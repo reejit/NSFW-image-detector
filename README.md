@@ -14,8 +14,8 @@ How to run on local host?
 * install tf-lite interpretor from the official tensorflow documentation https://www.tensorflow.org/lite/guide/python.    
 * python predictions.py
 
-Deployment of tensorflow-lite on AWS lambda.
-* To make sure the deployment package size is within the memory limits of aws lambda, I converted my model from tensorflow to tensorflow lite. For installing just the tf-lite interpreter compatible with zappa : https://github.com/tpaul1611/python_tflite_for_amazonlinux 
+Deployment of tensorflow-lite on AWS lambda+API Gateway.
+* To make sure the deployment package size is within the memory limits of aws lambda, I converted my model from tensorflow to tensorflow lite. For installing just the tf-lite interpreter compatible with zappa, we have to build tensorflow-lite wheel on ec2 linux platform and copy it to local pc  : https://github.com/tpaul1611/python_tflite_for_amazonlinux 
 https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/tools/pip_package
 * For installing tf-lite dependencies on lambda, you need to make sure that zappa detects tf-lite. Just copy tf-lite folder from virtualenv/lib/python/site-packages to the top-level folder in lambda : https://www.reddit.com/r/aws/comments/93jhgi/how_can_i_add_third_party_python_dependencies_to/
 The model is present in an s3 bucket and gets downloaded in the predictions.py script using Boto3 to the lambda s3 bucket.
