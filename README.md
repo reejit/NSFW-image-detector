@@ -1,13 +1,13 @@
 ![](nsfw.jpeg)
 # NSFW-Image-Detector
 API Keys          
-serverless : https://jl09ro02z3.execute-api.ap-south-1.amazonaws.com/dev     
-eg:
-https://jl09ro02z3.execute-api.ap-south-1.amazonaws.com/dev/pred?text=https://disco.scrolller.com/media/5bfac.jpg
-
-heroku : https://nsfw-web-api.herokuapp.com/swagger
-eg:
-https://nsfw-web-api.herokuapp.com/pred?text=https://disco.scrolller.com/media/5bfac.jpg
+serverless : https://jl09ro02z3.execute-api.ap-south-1.amazonaws.com/dev               
+eg:                     
+https://jl09ro02z3.execute-api.ap-south-1.amazonaws.com/dev/pred?text=https://disco.scrolller.com/media/5bfac.jpg           
+              
+heroku : https://nsfw-web-api.herokuapp.com/swagger                              
+eg:                     
+https://nsfw-web-api.herokuapp.com/pred?text=https://disco.scrolller.com/media/5bfac.jpg                        
 
 What it does?  
 It detects Not Safe For Work Images by calculating a NSFW score and classifying them into five categories:     Drawing,Hentai,Neutral,Porn,Sexy.Images can be uploaded directly from the client's computer or through a GET or POST request with the source of the image.    
