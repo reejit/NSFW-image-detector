@@ -1,6 +1,6 @@
 ![](nsfw.jpeg)
 # NSFW-Image-Detector
-API Keys 
+API Keys          
 serverless : https://jl09ro02z3.execute-api.ap-south-1.amazonaws.com/dev     
 eg:
 https://jl09ro02z3.execute-api.ap-south-1.amazonaws.com/dev/pred?text=https://disco.scrolller.com/media/5bfac.jpg
