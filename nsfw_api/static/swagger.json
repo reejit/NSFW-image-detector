@@ -1,0 +1,84 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "description": "Social Street Smart's NSFW API endpoint",
+    "version": "1.0.0",
+    "title": "Social Street Smart - NSFW",
+    "contact": {
+      "email": "rishabh.kumar1802@gmail.com"
+    },
+    "license": {
+      "name": "GNU General Public License",
+      "url": "http://www.gnu.org/licenses/"
+    }
+  },"servers": [
+    {
+      "url": "/"
+    }
+  ],
+  "tags": [
+    {
+      "name": "NSFW API",
+      "description": "Example API for getting the NSFW score an Image"
+    }
+  ],
+
+  "paths": {
+    "/pred": {
+      "post": {
+        "tags": [
+          "NSFW Score"
+        ],
+        "summary": "Enter the Image source/address and get its NSFW probability (Drawing, neutral, hentai, porn, sexy)",
+        "requestBody": {
+          "description": "Headline text form",
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Text"
+              }
+            }
+          }
+        },
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "201": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/components/schemas/Response"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+
+    }
+},
+  "components": {
+    "schemas": {
+      "Response": {
+        "type": "object",
+        "properties": {
+          "Result": {
+            "type": "string",
+            "format": "float"
+          }
+        }
+      },
+        "Text": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "format": "string"
+          }
+        }
+      }
+    }
+  }
+}
