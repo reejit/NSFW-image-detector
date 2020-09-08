@@ -16,10 +16,14 @@ What is it?
 It's a Convolutional Neural Network model(Inception v3) deployed using Flask ,tensorflow-lite ,Pillow, Python3.6, Tensorflow 2.0, Swagger.
 
 The inception v3 model is trained and finetuned on the dataset. https://github.com/alex000kim/nsfw_data_scraper .  
-How to run on local host?         
-* pip install -r requirements.txt
-* install tf-lite interpretor from the official tensorflow documentation https://www.tensorflow.org/lite/guide/python.    
-* python predictions.py
+How to run on local host?     
+* Clone into the project 
+* make sure python3.6 is installed and set to default         
+* Open terminal    
+* virtualenv env     
+* source env/bin/activate            
+* pip install -r requirements.txt    
+* python server.py
 
 
 The motive:  
