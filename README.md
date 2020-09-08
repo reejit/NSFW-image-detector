@@ -27,10 +27,10 @@ How to run on local host?
 
 
 The motive:  
-The main purpose behind this is to use Artificial intelligence to provide users with a safe browsing experience  
+The main purpose behind this is to use Artificial intelligence to provide users with a safe browsing experience.  
 
-This is a part of a larger project. I am currently working on a chrome extension which would detect the NSFW images on the browser & blur them out :)
- 
+This api can be called by a browser extension which verifies the NSFW images by this rest-api and blurs out such images on the tab.
+
   
   
   
