@@ -29,7 +29,7 @@ How to run on local host?
 The motive:  
 The main purpose behind this is to use Artificial intelligence to provide users with a safe browsing experience  
 
-This is a part of a larger project. I am currently working on a chrome extension which would detect the NSFW images on the browser & blur them out :)
+This REST-API is used in a browser extension to blur out NSFW images on the tab.
  
   
   
