@@ -29,7 +29,7 @@ How to run on local host?
 The motive:  
 The main purpose behind this is to use Artificial intelligence to provide users with a safe browsing experience  
 
-This REST-API is used in a browser extension to blur out NSFW images on the tab: https://github.com/rishav1802/NSFW-Images-Filter     
+This REST-API is called from a browser extension to blur out NSFW images on the tab: https://github.com/rishav1802/NSFW-Images-Filter     
 
 
  
