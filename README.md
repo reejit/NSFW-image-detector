@@ -10,7 +10,7 @@ eg:
 https://nsfw-web-api.herokuapp.com/pred?text=https://disco.scrolller.com/media/5bfac.jpg                        
 
 What it does?  
-It detects Not Safe For Work Images by calculating a NSFW score and classifying them into five categories:     Drawing,Hentai,Neutral,Porn,Sexy.Images can be uploaded directly from the client's computer or through a GET or POST request with the source of the image.    
+It detects Not Safe For Work Images by calculating a NSFW score and classifying them into five categories:     Drawing, Hentai, Neutral, Porn, Sexy. Images can be uploaded directly from the client's computer or through a GET or POST request with the source of the image.    
 
 What is it?  
 It's a Convolutional Neural Network model(Inception v3) deployed using Flask ,tensorflow-lite ,Pillow, Python3.6, Tensorflow 2.0, Swagger.
