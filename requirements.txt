@@ -1,18 +1,12 @@
 Flask==1.1.2
 Flask-Cors==1.10.3
-<<<<<<< HEAD
 flask_swagger_ui==3.20.9
-=======
->>>>>>> 12e74cbdee74f79dc3ae8ca5b3d9dc720f2333f2
 Pillow==7.1.2
 pytest==4.3.1
 python-dateutil==2.6.0
 requests==2.24.0
 https://dl.google.com/coral/python/tflite_runtime-2.1.0.post1-cp36-cp36m-linux_x86_64.whl
 Werkzeug==0.16.1
-<<<<<<< HEAD
-
-=======
 https://dl.google.com/coral/python/tflite_runtime-2.1.0.post1-cp36-cp36m-linux_x86_64.whl
 zipp==3.1.0
->>>>>>> 12e74cbdee74f79dc3ae8ca5b3d9dc720f2333f2
+
